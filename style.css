@@ -1,9 +1,14 @@
 body{
     margin:0;
     padding:0;
+    text-align:center;
 }
 h1{
     margin:0;
+}
+p{
+    margin:0;
+    padding:0;
 }
 .navbar{
     height:100px;
@@ -30,6 +35,11 @@ h1{
     justify-content:center;
     align-items:center;
 }
+.all:hover{
+    opacity:0.5;
+    cursor:pointer;
+    border:3px solid black;
+}
 .stone{
     background-color:rgb(243, 132, 150);
 }
@@ -43,4 +53,25 @@ h1{
     font-size:80px;
     color:white;
 }
+.score-board{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+    gap:5rem;
+    margin-top:3rem;
+}
+#user-score,#comp-score{
+    font-size:4rem;
+}
 
+#msg{
+    background-color:black;
+    color:white;
+    font-size:2rem;
+    display:inline-block;
+    margin-top:4rem;
+    padding:1rem;
+    border-radius:1rem;
+    box-shadow:0 0 10px black;
+}
