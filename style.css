@@ -14,3 +14,33 @@ h1{
     justify-content:center;
     align-items:center;
 }
+.hand-section{
+    display:flex;
+    width:100%;
+    height:300px;
+    justify-content:center;
+    align-items:center;
+}
+.all{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    margin:25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.stone{
+    background-color:rgb(243, 132, 150);
+}
+.paper{
+    background-color:rgb(199, 17, 199);
+}
+.scissor{
+    background-color:rgb(55, 158, 231);
+}
+.icon{
+    font-size:80px;
+    color:white;
+}
+
