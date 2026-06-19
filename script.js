@@ -69,3 +69,42 @@ const showWinner=(userWin,userChoice,compChoice)=>{
         win.style.backgroundColor="Red";
     }
 }
+
+//changing mode
+
+let back=document.querySelector("body");
+let m=document.querySelector(".mode");
+let icon=document.querySelector("#modeId");
+let header=document.querySelector(".navbar");
+let s=document.querySelectorAll(".score");
+let mesgBox=document.querySelector("#msg");
+
+let darkMode=false;
+
+m.addEventListener("click",()=>{
+    if(!darkMode){
+        back.style.backgroundColor="rgb(3, 27, 27)";
+        icon.className="fa-regular fa-moon";
+        s.forEach(score=>{
+            score.style.color="White";
+        })
+        mesgBox.style.backgroundColor="White";
+        mesgBox.style.color="Black";
+        mesgBox.style.boxShadow="0 0 7px white";
+        header.style.backgroundColor="White";
+        header.style.color="black";
+        darkMode=true;
+    }
+    else{
+        back.style.backgroundColor="White";
+        icon.className="fa-solid fa-moon";
+        s.forEach(score=>{
+            score.style.color="Black";
+        })
+        darkMode=false;
+        mesgBox.style.backgroundColor="Black";
+        mesgBox.style.color="White";
+        header.style.backgroundColor="rgb(3, 27, 27)";
+        header.style.color="White";
+    }
+})

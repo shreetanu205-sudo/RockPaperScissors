@@ -19,6 +19,18 @@ p{
     justify-content:center;
     align-items:center;
 }
+.navbar h1{
+    width:90%;
+}
+.mode{
+    color:white;
+    background-color:rgb(3, 27, 27);
+    border:2px solid white;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    font-size:larger;
+}
 .hand-section{
     display:flex;
     width:100%;
