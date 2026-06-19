@@ -40,13 +40,13 @@ p{
     cursor:pointer;
     border:3px solid black;
 }
-.stone{
+#Rock{
     background-color:rgb(243, 132, 150);
 }
-.paper{
+#Paper{
     background-color:rgb(199, 17, 199);
 }
-.scissor{
+#Scissors{
     background-color:rgb(55, 158, 231);
 }
 .icon{
